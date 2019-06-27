@@ -1,0 +1,15 @@
+{
+  "name": "code-tool/jaeger-logger-bridge",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Jaeger\\Logger\\Bridge\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.3",
+    "psr/log": "^1.0.2",
+    "code-tool/jaeger-client-php": "^3.0.2"
+  },
+  "minimum-stability": "stable"
+}
