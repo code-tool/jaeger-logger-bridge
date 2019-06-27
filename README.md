@@ -1,9 +1,9 @@
 
-# Curl Client OpenTracing decorator 
+# Jaeger Logger Decorator 
 
 
 ## Installation
 
 ```
-composer require code-tool/curl-client-jaeger
+composer require code-tool/jaeger-logger-bridge
 ```
