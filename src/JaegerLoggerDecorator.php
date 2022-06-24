@@ -23,11 +23,12 @@ class JaegerLoggerDecorator extends AbstractLogger
         $this->normalizer = $normalizer;
     }
 
-    public function log($level, $message, array $context = [])
+    public function log($level, $message, array $context = []): void
     {
         if (null !== ($span = $this->span->getSpan()) && $span->isSampled()) {
             $span->addLog(new UserLog($message, $level, $this->normalizer->normalize($context)));
         }
+
         $this->logger->log($level, $message, $context);
     }
 }
